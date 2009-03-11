@@ -47,38 +47,23 @@ h4, h4 a {
   color:                  #6d6da2;
   margin-left:0%
 }
-
 #header li a:visited {
   color:                  #6d6da2;
 }
-
 #header li a:hover {
 	color:                  #a7a7f9;
-}
-
+}s
 #header li a:active {
 	color:                  #d587ef;
-
 }
 
-body.best_galleries #header li.best_galleries a,
-body.full_galleries #header li.full_galleries a, 
-body.videos #header li.all_videos a, 
-body.quem_somos #header li.quem_somos a,
-body.contact #header li.contact a, 
-body.blog #header li.blog a {
+#header li.current a {
 	color:                  #f498da;
 }
 
-body.best_galleries #header li.best_galleries a:hover,
-body.full_galleries #header li.full_galleries a:hover, 
-body.videos #header li.all_videos a:hover, 
-body.quem_somos #header li.quem_somos a:hover,
-body.contact #header li.contact a:hover, 
-body.blog #header li.blog a:hover {
+#header li.current a:hover {
   color:                  #a7a7f9;
 }
-
 /* /Header tabbed menu */
 
 
@@ -384,18 +369,6 @@ body#selection #selection_size label {
 /* /Selection */
 
 
-/* Who */
-.quem_somos dt, 
-.quem_somos #main_content strong {
-  color:                  #f498da;
-}
-
-.quem_somos cite {
-	background:             transparent url(../images/signature_patfig.gif) no-repeat right top;
-}
-/* /Who */
-
-
 /* Forms (contact, checkout, search) */
 label {
 	color:                  #dbdbdb;
@@ -507,9 +480,8 @@ button:hover {
 #footer {
 	background:             #292938 url(../images/footer.gif) repeat-x;
 	background-position:0;
-	border-left:1px solid #3b3b48;
-	border-right:1px solid #3b3b48;
-	border-bottom:1px solid #3b3b48;
+	border:                 1px solid #3B3B48;
+  border-top:             none;
 }
 
 #footer p {
@@ -518,37 +490,32 @@ button:hover {
 /* /Footer */
 
 
-
-/* Instructions */
-body.instructions #toc {
-  background:             #EFE3C3;
-  border-color:           #E0C99B;
-}
-
-body.instructions #main_content dt {
-  color:                  #940029;
+/* Text */
+.text dt, 
+.text #main_content strong {
+  color:                  #f498da;
 }
 
 code {
-  color:                  #111;
-  background:             #EFE3C3; 
+  color:                  #FFF;
+  background:             #16161F; 
 }
 
-.instructions table * {
-  border-color:           #E0C99B;
+.text table * {
+  border-color:           #16161F;
 }
 
-.instructions th {
-  color:                  #940029;
-  background:             #EFE3C3;
+.text th {
+  color:                  #FFF;
+  background:             #16161F;
 }
 
-.instructions td span {
-  color:                  #BAA984;
+.text td span {
+  color:                  #888;
 }
 
-pre {
-  background:             #EFE3C3;
-  border-color:           #E0C99B;
+pre, #toc {
+  background:             #16161F;
+  border-color:           #3B3B48;
 }
-/* /Instructions */
+/* /Text */
