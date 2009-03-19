@@ -1,0 +1,81 @@
+/* Style sheet with conditions for Internet Explorer. */
+
+body, #main_content h1, 
+#checkout #main_content h2 {
+  position:             relative;
+}
+
+hr {
+  margin:               -8px 0 -7px 0;
+}
+
+
+#header ul {
+  top:                  66px;
+}
+
+#global_search {
+  top:                  2.4em;
+}
+
+#header h2#slogan {
+  position:             absolute;
+  top:                  78px;
+  left:                 60px;
+}
+
+
+.second {
+  bottom:               40px;
+}
+
+
+#thumbnails {
+  margin-right:         -3.9em;
+  margin-left:          0;
+}
+
+#thumbnails li div a {
+  display:              block;
+}
+
+#thumbnails li div span.ie {
+  display:              inline-block;
+	vertical-align:       middle;
+  height:               99%;
+}
+#thumbnails li div img {
+  vertical-align:       middle;
+}
+
+
+#all_pictures label, #cart_items label, 
+#selected_pictures label {
+	filter:               alpha(opacity=70);
+}
+
+.moved_to_cart {
+	filter:               alpha(opacity=30);
+}
+
+#selection #selection_size {
+  right:                28.25em;
+  top:                  0;
+}
+#selection #selection_size label {
+  display:              block;
+  width:                auto;
+}
+
+#cart_items {
+  margin-left:          34em;
+}
+
+
+*:first-child + html #facebox a {
+  right:                -18px;
+}
+
+#facebox img {
+  margin-bottom:        -5px !important;
+}
