@@ -1,61 +1,60 @@
 /* Cores:
-#000    - Preto
-#111    - Cinza quase preto (ou pouco mais escuro que #16161F)
-#DBDBDB - Cinza claro (parecido com #D9D9D9)
-#9E9EE7 - Azul lavanda claro para médio
-#33335A - Azul marinho
-#424273 - Azul marinho claro (parecido com #404070)
-#B6B6FF - Azul lavanda claro (button:hover)
-#404070 - Azul marinho claro (parecido com #424273) (button:hover)
-#ABABC3- Cinza azulado claro (parecido com #A5A5CB)
-#F498DA - Rosa vivo claro
+#111    - Cinza quase preto (ou pouco mais escuro que #16161F) (html; input, textarea)
+#DBDBDB - Cinza claro (parecido com #D9D9D9 e #D7D7D9) (html *, label) <<-- IMPORTANTE! Só um seletor, mas se aplica a tudo! Não subestimar! (pode ser dominante)
+#9E9EE7 - Azul lavanda claro para médio (button)
+#33335A - Azul marinho (button; .submitting, .submitting:hover)
+#424273 - Azul marinho claro (parecido com #404070) (border-color de: button; .submitting, .submitting:hover) (pode ser dominante)
+#B6B6FF - Azul lavanda claro (parecido com #A7A7F9) (button:hover)
+#404070 - Azul marinho claro (parecido com #424273) (background-color de: button:hover)
+#ABABC3- Cinza azulado claro (parecido com #A5A5CB) (h2; h3; #header h2#slogan)
+#F498DA - Rosa vivo claro (cor de: h3, h3 a, h3 a:visited; #data_sheet dl a, #searched_item, .text dt, .text #main_content strong; #header li.current a; 
+                          .submitting, .submitting:hover)
 #EF72CC - Rosa vivo médio (h3, h3 a:hover, a:focus, #data_sheet dl a:hover)
+
 #6C6CB1 - Azul lavanda escuro (h4, h4 a, h4 a:visited)
-#7676DC - Azul lavanda médio (h4 a:focus, h4 a:hover)
-#FFF    - Branco
-#CCC    - Cinza claro para médio (input, textarea)
-#2A7B8E - Azul piscina escuro (.pages a)
-#D9D9D9 - Cinza claro (parecido com #DBDBDB) (.pages strong; #thumbnails label)
-#16161F - Cinza azulado quase preto (ou pouco mais claro que #111) (#toc, pre; code, .text th; .text table *)
+#7676DC - Azul lavanda médio (parecido com #8585CC) (h4 a:focus, h4 a:hover)
+#CCC    - Cinza claro para médio (levemente mais escuro que !#DBDBDB, #D9D9D9, #D3D3D3 e #D7D7D9) (input, textarea)
+#2A7B8E - Azul piscina escuro (color de: .pages a) (cor bonita, mas fica bizarra onde está)
+#D9D9D9 - Cinza claro (parecido com !#DBDBDB e #D7D7D9) (.pages strong; #thumbnails label)
+#16161F - Cinza azulado quase preto (parecido com #17171F e pouco mais claro que #111) (#toc, pre; code, .text th; .text table *)
 #292938 - Azul marinho escuro (#main_content)
-#7B7BA4 - Azul lavanda escuro desbotado (parecido com #7575A8)
+#7B7BA4 - Azul lavanda escuro desbotado (parecido com #7575A8, #6D6DA2 e #7C7C9E) (usado só em color; pode ser predominante em relação aos três)
 #6849C1 - Azul lavanda médio para escuro (#big_picture img)
-#4A4A5F - Cinza azulado escuro (parecido com #48485E) (#big_picture img; #big_picture label)
-#D3D3D3 - Cinza claro (ligeiramente mais escuro que #D9D9D9 ou #DBDBDB) (#big_picture label; #tags h3)
+#4A4A5F - Cinza azulado escuro (parecido com #48485E e #44445D) (#big_picture img; #big_picture label)
+
+#D3D3D3 - Cinza claro (ligeiramente mais escuro que !#DBDBDB, #D9D9D9 ou #D7D7D9) (#big_picture label; #tags h3)
 #5C5C79 - Cinza azulado médio (#cart_items; #all_pictures a:hover, #cart_items a:hover, #selected_pictures a:hover)
-#48485E - Cinza azulado escuro (parecido com #4A4A5F) (#cart_items.instructions)
-#3B3B48 - Cinza azulado escuro principal (borders: #header; #main_content; #main_content h1; #footer; pre, #toc)
-#7575A8 - Azul lavanda escuro desbotado (parecido com #7B7BA4) (#footer a)
+#48485E - Cinza azulado escuro (parecido com #4A4A5F e #44445D) (background-color de: #cart_items.instructions)
+#3B3B48 - Cinza azulado escuro principal (parecido com #383849) (borders: #header; #main_content; #main_content h1; #footer; pre, #toc)
+          (pode ser dominante sobre #383849)
+#7575A8 - Azul lavanda escuro desbotado (parecido com #7B7BA4 e #06D6DA2) (#footer a)
 #A5A5CB - Cinza azulado claro (parecido com #ABABC3) (#footer p, #footer h6, #footer strong; #global_search #query)
 #181831 - Azul quase preto (#global_search #query)
+#6D6DA2 - Azul lavanda escuro desbotado (parecido com #7B7BA4 e #7575A8, mas menos desbotado) (#header li a; #header li a:visited)
+#D7D7D9 - (#main_content h1) (parecido com !#DBDBDB e #D9D9D9, e ligeiramente mais claro que #D3D3D3)
+#F88181 - Rosa avermelhado claro (background-color de: #submit_error; .email_field_with_errors, .email_field_with_errors:hover, .email_field_with_errors:focus)
 
-#6d6da2
-#d7d7d9
-#F6F0DB - Bege claro (do site da Pati!)
-#f88181
-#a31212
+#A31212 - Vermelho escuro (border-color de: #submit_error)
+#770000 - Vermelho escuro quase vinho (color de: #submit_error)
+#FAEFB3 - Amarelo quase branco (background-color de: #submit_success)
+#FFCC66 - Amarelo claro (border-color de:#submit_success)
+#CC6600 - Amarelo escuro alaranjado (color de: #submit_success)
+#17171F - Cinza azulado quase preto (parecido com #16161F e pouco mais claro que #111) (#summary, #about_us, #data_sheet, .application #main_content ul, .pages)
+          (pode ser dominante sobre #16161F)
+#383849 - Cinza azulado escuro principal (parecido com #3B3B48) (background de: #thumbnails label)
+#8585CC - Azul lavanda médio desbotado (parecido com #7676DC) (color de: #back_to_gallery a:hover; #go_to_selection a:hover; #subnavigation a:hover, #see_data_sheet a:hover; #summary a:hover; .application #main_content ul li a:hover, #valid_search_suggestions a:hover, .go_to_checkout a:hover) (pode ser dominante sobre #7676DC)
+#9898D2 - Azul lavanda médio mais desbotado (#footer a:hover)
+#A7A7F9 - Azul lavanda claro (parecido com #B6B6FF) (#header li a:hover, #header li.current a:hover) (pode ser dominante sobre #B6B6FF)
 
-#770000 - (#submit_error)
-#faefb3
-#ffcc66
-#cc6600
-#17171f
-#383849
-#8585cc
-#9898d2
-#a7a7f9
-#8585cc
-#8585cc
-#8585cc
-#7c7c9e
-#44445d
-#af464a
-#8585cc
-#333344
-#cacaca
-#4a4a63
-#d587ef
-
+#7C7C9E - Azul lavanda escuro desbotado (parecido com #7B7BA4 e #7575A8) (#tags a, #tags a:visited)
+#44445D - Cinza azulado escuro (parecido com #4A4A5F e #48485E) (background de: #tags a:hover) (pode ser dominante sobre os dois)
+#AF464A - (border-color de: .email_field_with_errors, .email_field_with_errors:hover, .email_field_with_errors:focus)
+#333344 - (background-color de: .pages a, .pages a:visited, .pages a.previous:visited, .pages a.next:visited, .pages a.previous, .pages a.next; .pages a.previous:hover)
+#CACACA - (color de: .pages [various links])
+#4A4A63 - (background-color de: .pages a.next:hover, .pages a:hover)
+#D587EF - (color de: #header li a:active)
+#000    - Preto
+#FFF    - Branco
 */
 
 html {
@@ -77,7 +76,7 @@ button:hover {
   background-color:     #404070;
 }
 
-h1, h2 {
+h2 {
   color:                #ababc3;
 }
 
@@ -101,7 +100,8 @@ h4 a:focus, h4 a:hover {
 
 input, textarea {
   background:           #fff;
-  border-color:         #CCC;
+/*  border-color:         #CCC;*/
+  border-color:                                     #DBDBDB;
   color:                #111;
 }
 
@@ -140,7 +140,8 @@ input:hover, textarea:hover {
 }
 
 .pages strong {
-  background:           #d9d9d9;
+/*  background:           #d9d9d9;*/
+  background:                                     #DBDBDB;
   color:                #000;
 }
 
@@ -184,7 +185,7 @@ code, .text th {
 
 #big_picture label {
   background:           #292938;
-  color:                #d3d3d3;
+/*  color:                #d3d3d3;*/
   border-color:         #4a4a5f;
 }
 
@@ -195,6 +196,7 @@ code, .text th {
 
 #cart_items.instructions {
   background:           #48485e url(../images/selection_instructions.gif) no-repeat center center;
+  background:                                                                             #44445D url(../images/selection_instructions.png) no-repeat center;
 }
 
 #data_sheet dl a, #searched_item, .text dt, .text #main_content strong {
@@ -268,6 +270,7 @@ code, .text th {
 
 #header li a {
   color:                #6d6da2;
+  color:                                                      #7B7BA4;
 }
 
 #main_content {
@@ -276,17 +279,12 @@ code, .text th {
   border-right-color:   #3b3b48;
 }
 
-#main_content h1{
+#main_content h1 {
   border-bottom-color:  #3b3b48;
-  color:                #d7d7d9;
 }
 
 #see_data_sheet {
   background:           transparent url(../images/arrow_down.gif) no-repeat left center;
-}
-
-#selection_size label {
-	color:                #F6F0DB;
 }
 
 #go_to_selection a {
@@ -319,7 +317,8 @@ code, .text th {
 }
 
 #tags h3 {
-  color:                #d3d3d3;
+/*  color:                #d3d3d3;*/
+  color:                                                                    #DBDBDB;
 }
 
 body#selection #selection_size {
@@ -337,7 +336,7 @@ pre, #toc {
 
 #thumbnails label {
   background:           #383849;
-  color:                #d9d9d9;
+/*  color:                #d9d9d9;*/
 }
 
 #thumbnails li div a {
@@ -382,6 +381,7 @@ pre, #toc {
 
 #header li a:visited {
   color:                #6d6da2;
+  color:                                          #7B7BA4;
 }
 
 #header li a:hover, #header li.current a:hover {
@@ -393,7 +393,7 @@ pre, #toc {
 }
 
 #header h1#logo_screen a, h1#logo_screen a:visited, #header h1 img, .pages a:hover, .pages a.previous:hover, .pages a.next:hover {
-  color:                #FFFFFF;
+  color:                #FFF;
 }
 
 #see_data_sheet:hover {
@@ -413,12 +413,13 @@ pre, #toc {
   color:                #7b7ba4;
 }
 
-#summary a:hover{
+#summary a:hover {
   color:                #8585cc;
 }
 
 #tags a, #tags a:visited {
-  color:                #7c7c9e;
+/*  color:                #7c7c9e;*/
+  color:                                                      #7B7BA4;
 }
 
 #tags a:hover {
@@ -426,7 +427,7 @@ pre, #toc {
   color:                #FFF;
 }
 
-.email_field_with_errors, .email_field_with_errors:hover, .email_field_with_errors:focus{
+.email_field_with_errors, .email_field_with_errors:hover, .email_field_with_errors:focus {
   background:           #f88181;
   border-color:         #af464a;
   color:                #fff;
