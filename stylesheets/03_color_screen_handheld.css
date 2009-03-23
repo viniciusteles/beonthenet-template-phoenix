@@ -1,12 +1,12 @@
 /* Cores:
-#111    - Cinza quase preto (ou pouco mais escuro que #16161F) (html; input, textarea)
-#DBDBDB - Cinza claro (parecido com #D9D9D9 e #D7D7D9) (html *, label) <<-- IMPORTANTE! Só um seletor, mas se aplica a tudo! Não subestimar! (pode ser dominante)
+#111    - Cinza quase preto (ou pouco mais escuro que #16161F) (html; input, textarea) (pode ser dominante sobre #000)
+#DBDBDB - Cinza claro (parecido com # , #D7D7D9, #CACACA) (html *, label) <<-- IMPORTANTE! Só um seletor, mas se aplica a tudo! Não subestimar! (pode ser dominante)
 #9E9EE7 - Azul lavanda claro para médio (button)
 #33335A - Azul marinho (button; .submitting, .submitting:hover)
 #424273 - Azul marinho claro (parecido com #404070) (border-color de: button; .submitting, .submitting:hover) (pode ser dominante)
 #B6B6FF - Azul lavanda claro (parecido com #A7A7F9) (button:hover)
-#404070 - Azul marinho claro (parecido com #424273) (background-color de: button:hover)
-#ABABC3- Cinza azulado claro (parecido com #A5A5CB) (h2; h3; #header h2#slogan)
+#404070 - Azul marinho claro (parecido com #424273) (background-color de: button:hover) (extinto por #424273)
+#ABABC3- Cinza azulado claro (parecido com #A5A5CB) (color de: h2; h3; #header h2#slogan)
 #F498DA - Rosa vivo claro (cor de: h3, h3 a, h3 a:visited; #data_sheet dl a, #searched_item, .text dt, .text #main_content strong; #header li.current a; 
                           .submitting, .submitting:hover)
 #EF72CC - Rosa vivo médio (h3, h3 a:hover, a:focus, #data_sheet dl a:hover)
@@ -25,10 +25,10 @@
 #D3D3D3 - Cinza claro (ligeiramente mais escuro que !#DBDBDB, #D9D9D9 ou #D7D7D9) (#big_picture label; #tags h3)
 #5C5C79 - Cinza azulado médio (#cart_items; #all_pictures a:hover, #cart_items a:hover, #selected_pictures a:hover)
 #48485E - Cinza azulado escuro (parecido com #4A4A5F e #44445D) (background-color de: #cart_items.instructions)
-#3B3B48 - Cinza azulado escuro principal (parecido com #383849) (borders: #header; #main_content; #main_content h1; #footer; pre, #toc)
-          (pode ser dominante sobre #383849)
-#7575A8 - Azul lavanda escuro desbotado (parecido com #7B7BA4 e #06D6DA2) (#footer a)
-#A5A5CB - Cinza azulado claro (parecido com #ABABC3) (#footer p, #footer h6, #footer strong; #global_search #query)
+#3B3B48 - Cinza azulado escuro principal (parecido com #383849 e #333344) (borders: #header; #main_content; #main_content h1; #footer; pre, #toc)
+          (pode ser dominante sobre #383849 e #333344)
+#7575A8 - Azul lavanda escuro desbotado (parecido com #7B7BA4 e #06D6DA2) (#footer a) (extinto por #7B7BA4)
+#A5A5CB - Cinza azulado claro (parecido com #ABABC3) (color de: #footer p, #footer h6, #footer strong; #global_search #query)
 #181831 - Azul quase preto (#global_search #query)
 #6D6DA2 - Azul lavanda escuro desbotado (parecido com #7B7BA4 e #7575A8, mas menos desbotado) (#header li a; #header li a:visited)
 #D7D7D9 - (#main_content h1) (parecido com !#DBDBDB e #D9D9D9, e ligeiramente mais claro que #D3D3D3)
@@ -47,13 +47,13 @@
 #A7A7F9 - Azul lavanda claro (parecido com #B6B6FF) (#header li a:hover, #header li.current a:hover) (pode ser dominante sobre #B6B6FF)
 
 #7C7C9E - Azul lavanda escuro desbotado (parecido com #7B7BA4 e #7575A8) (#tags a, #tags a:visited)
-#44445D - Cinza azulado escuro (parecido com #4A4A5F e #48485E) (background de: #tags a:hover) (pode ser dominante sobre os dois)
-#AF464A - (border-color de: .email_field_with_errors, .email_field_with_errors:hover, .email_field_with_errors:focus)
-#333344 - (background-color de: .pages a, .pages a:visited, .pages a.previous:visited, .pages a.next:visited, .pages a.previous, .pages a.next; .pages a.previous:hover)
-#CACACA - (color de: .pages [various links])
-#4A4A63 - (background-color de: .pages a.next:hover, .pages a:hover)
-#D587EF - (color de: #header li a:active)
-#000    - Preto
+#44445D - Cinza azulado escuro (parecido com #4A4A5F, #48485E e #4A4A63) (background de: #tags a:hover) (pode ser dominante sobre os três)
+#AF464A - Rosa avermelhado escuro (border-color de: .email_field_with_errors, .email_field_with_errors:hover, .email_field_with_errors:focus)
+#333344 - Cinza azulado escuro principal (parecido com #3B3B38) (background-color de: .pages a, .pages a:visited, .pages a.previous:visited, .pages a.next:visited, .pages a.previous, .pages a.next; .pages a.previous:hover) (pode ser substituído por #3B3B48)
+#CACACA - Cinza claro (parecio com #DBDBDB) (color de: .pages [various links]) (vai ser extinto por #DBDBDB)
+#4A4A63 - Cinza azulado escuro (parecido com #4A4A5F) (background-color de: .pages a.next:hover, .pages a:hover) (vai ser extinto por #44445D)
+#D587EF - Lilás (color de: #header li a:active) (extinto por #EF72CC)
+#000    - Preto (vai ser extinto por #111)
 #FFF    - Branco
 */
 
@@ -66,22 +66,27 @@ html *, label {
 }
 
 button {
-  color:                #9E9EE7;
-	background-color:     #33335A;
+/*  color:                #9E9EE7;*/
+  color:                                      #A7A7F9;
+  background-color:     #33335A;
   border-color:         #424273;
 }
 
 button:hover {
-  color:                #b6b6ff;
-  background-color:     #404070;
+/*  color:                #b6b6ff;*/
+/*  color:                                        #A7A7F9;*/
+/*  background-color:     #404070;*/
+  background-color:#424273;
 }
 
 h2 {
-  color:                #ababc3;
+/*  color:                #ababc3;*/
+  color:      #A5A5CB;
 }
 
 h3 {
-  color:                #ababc3;
+/*  color:                #ababc3;*/
+  color:      #A5A5CB;
 }
 h3, h3 a, h3 a:visited {
   color:                #f498da;
@@ -91,11 +96,14 @@ h3, h3 a:hover, a:focus, #data_sheet dl a:hover {
 }
 
 h4, h4 a, h4 a:visited {
-  color:                #6c6cb1;
+/*  color:                #6c6cb1;*/
+  color:#7B7BA4;
+/*  color:red;*/
 }
 
 h4 a:focus, h4 a:hover {
-  color:                #7676dc;
+/*  color:                #7676dc;*/
+  color:#8585CC;
 }
 
 input, textarea {
@@ -105,14 +113,17 @@ input, textarea {
   color:                #111;
 }
 
-input:active, input:focus, textarea:active, textarea:focus {
-  background:           #fff url(../images/bg_input_on.gif) repeat-x bottom;
-  border-color:         #000;
-}
-
 input:hover, textarea:hover {
   background:           #fff;
-  border-color:         #000;
+/*  border-color:         #000;*/
+  border-color:#111;
+}
+
+input:active, input:focus, textarea:active, textarea:focus {
+/*  background:           #FFF url(../images/bg_input_on.gif) repeat-x top;*/
+  background:           #FFF url(../images/input_hover.gif) repeat-x top;
+/*  border-color:         #000;*/
+  border-color: #111;
 }
 
 .application #main_content h2 {
@@ -135,18 +146,16 @@ input:hover, textarea:hover {
   opacity:              .3;
 }
 
-.pages a {
-  color:                #2a7b8e;
-}
-
 .pages strong {
 /*  background:           #d9d9d9;*/
   background:                                     #DBDBDB;
-  color:                #000;
+/*  color:                #000;*/
+  color:#111;
 }
 
 .text table * {
-  border-color:         #16161F;
+/*  border-color:         #16161F;*/
+  border-color:#17171F;
 }
 
 .text td span {
@@ -154,8 +163,10 @@ input:hover, textarea:hover {
 }
 
 code, .text th {
-  background:           #16161F;
+/*  background:           #16161F;*/
+  background: #17171F;
   color:                #FFF;
+  color:#DBDBDB;
 }
 
 #all_pictures label, #cart_items label, #selected_pictures label {
@@ -179,14 +190,18 @@ code, .text th {
 }
 
 #big_picture img {
-  color:                #6849c1;
-  border-color:         #4A4A5F;
+/*  color:                #6849c1;*/
+  color:        #F498DA;
+/*  border-color:         #4A4A5F;*/
+  border-color: #44445D;
 }
 
 #big_picture label {
   background:           #292938;
+  
 /*  color:                #d3d3d3;*/
-  border-color:         #4a4a5f;
+/*  border-color:         #4a4a5f;*/
+  border-color:#44445D;
 }
 
 #cart_items {
@@ -195,7 +210,7 @@ code, .text th {
 }
 
 #cart_items.instructions {
-  background:           #48485e url(../images/selection_instructions.gif) no-repeat center center;
+/*  background:           #48485e url(../images/selection_instructions.gif) no-repeat center center;*/
   background:                                                                             #44445D url(../images/selection_instructions.png) no-repeat center;
 }
 
@@ -213,7 +228,8 @@ code, .text th {
 
 #facebox a {
   background-position:  top right;
-  color:                #000;
+/*  color:                #000;*/
+  color:#111;
 }
 
 #facebox img {
@@ -230,7 +246,9 @@ code, .text th {
 }
 
 #footer a {
-  color:                #7575a8;
+/*  color:                #7575a8;*/
+  color:#7B7BA4;
+/*  color:red;*/
 }
 
 #footer p, #footer h6, #footer strong {
@@ -244,7 +262,7 @@ code, .text th {
 #global_search #query {
   background:           #181831;
   border-color:         #181831;
-	color:                #A5A5CB;
+  color:                #A5A5CB;
 }
 
 #global_search fieldset {
@@ -265,12 +283,13 @@ code, .text th {
 }
 
 #header h2#slogan {
-	color:                #ABABC3;
+/*  color:                #ABABC3;*/
+  color:      #A5A5CB;
 }
 
 #header li a {
-  color:                #6d6da2;
-  color:                                                      #7B7BA4;
+/*  color:                #6d6da2;*/
+/*  color:                                                      #7B7BA4;*/
 }
 
 #main_content {
@@ -293,13 +312,15 @@ code, .text th {
 
 #submit_error {
   background-color:     #f88181;
-  border-color:         #a31212;
+/*  border-color:         #a31212;*/
+  border-color:    #770000;
   color:                #770000;
 }
 
 #submit_success {
   background-color:     #faefb3;
-  border-color:         #ffcc66;
+/*  border-color:         #ffcc66;*/
+  border-color:     #CC6600;
   color:                #cc6600;
 }
 
@@ -309,11 +330,13 @@ code, .text th {
 
 #summary, #about_us, #data_sheet, .application #main_content ul, .pages {
   background:           #17171f;
-  border-color:         #000;
+/*  border-color:         #000;*/
+  border-color:#111;
 }
 
 #picture_description p {
-  color:                #000;
+/*  color:                #000;*/
+  color:#111;
 }
 
 #tags h3 {
@@ -330,12 +353,14 @@ body#selection #selection_size label {
 }
 
 pre, #toc {
-  background:           #16161F;
+/*  background:           #16161F;*/
+  background: #17171F;
   border-color:         #3B3B48;
 }
 
 #thumbnails label {
-  background:           #383849;
+/*  background:           #383849;*/
+  background:#3B3B48;
 /*  color:                #d9d9d9;*/
 }
 
@@ -372,7 +397,8 @@ pre, #toc {
 }
 
 #footer a:hover {
-  color:                #9898d2;
+/*  color:                #9898d2;*/
+  color:#8585CC;
 }
 
 #go_back_to_thumbnails:hover{
@@ -380,11 +406,11 @@ pre, #toc {
 }
 
 #header li a:visited {
-  color:                #6d6da2;
-  color:                                          #7B7BA4;
+/*  color:                #6d6da2;*/
+/*  color:                                          #7B7BA4;*/
 }
 
-#header li a:hover, #header li.current a:hover {
+#header li a:hover {
   color:                #a7a7f9;
 }
 
@@ -398,11 +424,6 @@ pre, #toc {
 
 #see_data_sheet:hover {
   background:           transparent url(../images/arrow_down_hover.gif) no-repeat left center;
-}
-
-#go_to_selection a:hover {
-  background:           url(../images/select_pictures_hover.gif) no-repeat top left;
-  color:                #8585cc;
 }
 
 #subnavigation a:hover, #see_data_sheet a:hover {
@@ -429,7 +450,8 @@ pre, #toc {
 
 .email_field_with_errors, .email_field_with_errors:hover, .email_field_with_errors:focus {
   background:           #f88181;
-  border-color:         #af464a;
+/*  border-color:         #af464a;*/
+  border-color:#770000;
   color:                #fff;
 }
 
@@ -437,23 +459,33 @@ pre, #toc {
   color:                #7b7ba4;
 }
 
+#go_to_selection a:hover {
+  background:           url(../images/select_pictures_hover.gif) no-repeat top left;
+  color:                #8585cc;
+}
+
 .application #main_content ul li a:hover, #valid_search_suggestions a:hover, .go_to_checkout a:hover {
   color:                #8585cc;
 }
 
 .pages a, .pages a:visited, .pages a.previous:visited, .pages a.next:visited, .pages a.previous, .pages a.next {
-  background-color:     #333344;
-  color:                #cacaca;
+/*  background-color:     #333344;*/
+  background-color:#3B3B48;
+/*  color:                #cacaca;*/
+  color:#DBDBDB;
 }
 
 .pages a.next:hover, .pages a:hover {
-  background-color:     #4a4a63;
-  color:                #cacaca;
+/*  background-color:     #4a4a63;*/
+  background-color:#5C5C79;
+/*  color:                #cacaca;*/
+  color:#DBDBDB;
 }
 
 .pages a.previous:hover {
-  background-color:     #333344;
-  color:                #cacaca;
+/*  background-color:     #333344;*/
+/*  color:                #cacaca;*/
+  color:#DBDBDB;
 }
 
 .submitting, .submitting:hover {
@@ -463,7 +495,8 @@ pre, #toc {
 }
 
 #header li a:active {
-  color:                #d587ef;
+/*  color:                #d587ef;*/
+  color:      #EF72CC;
 }
 
 #thumbnails a:hover img {

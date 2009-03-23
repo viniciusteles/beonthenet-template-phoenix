@@ -572,9 +572,6 @@ body > #facebox {
 .submitting, .submitting:hover {
   border:               1px solid;
 }
-.submitting:active {
-  border-style:         outset;
-}
 
 #submit_error, #submit_success {
   padding:              .5em 8em;
