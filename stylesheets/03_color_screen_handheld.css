@@ -9,7 +9,7 @@
 #ABABC3- Cinza azulado claro (parecido com #A5A5CB) (color de: h2; h3; #header h2#slogan)
 #F498DA - Rosa vivo claro (cor de: h3, h3 a, h3 a:visited; #data_sheet dl a, #searched_item, .text dt, .text #main_content strong; #header li.current a; 
                           .submitting, .submitting:hover)
-#EF72CC - Rosa vivo médio (h3, h3 a:hover, a:focus, #data_sheet dl a:hover)
+#EF72CC - Rosa vivo médio (h3, h3 a:hover, a:focus, #data_sheet dl a:hover; #header li a:active)
 
 #6C6CB1 - Azul lavanda escuro (h4, h4 a, h4 a:visited)
 #7676DC - Azul lavanda médio (parecido com #8585CC) (h4 a:focus, h4 a:hover)
@@ -58,459 +58,426 @@
 */
 
 html {
-  background:           #111 url(../images/site_hatching.gif) repeat-x left top;
+  background:             #111 url(../images/site_hatching.gif) repeat-x left top;
 }
 
 html *, label {
-  color:                #DBDBDB;
+  color:                  #DBDBDB;
 }
 
 button {
-/*  color:                #9E9EE7;*/
-  color:                                      #A7A7F9;
-  background-color:     #33335A;
-  border-color:         #424273;
+  color:                  #A7A7F9;
+  background-color:       #33335A;
+  border-color:           #424273;
 }
 
 button:hover {
-/*  color:                #b6b6ff;*/
-/*  color:                                        #A7A7F9;*/
-/*  background-color:     #404070;*/
-  background-color:#424273;
+  background-color:       #424273;
 }
 
 h2 {
-/*  color:                #ababc3;*/
-  color:      #A5A5CB;
+  color:                  #A5A5CB;
 }
 
 h3 {
-/*  color:                #ababc3;*/
-  color:      #A5A5CB;
-}
-h3, h3 a, h3 a:visited {
-  color:                #f498da;
-}
-h3, h3 a:hover, a:focus, #data_sheet dl a:hover {
-  color:                #ef72cc;
+  color:                  #A5A5CB;
 }
 
+
 h4, h4 a, h4 a:visited {
-/*  color:                #6c6cb1;*/
-  color:#7B7BA4;
-/*  color:red;*/
+  color:                  #7B7BA4;
 }
 
 h4 a:focus, h4 a:hover {
-/*  color:                #7676dc;*/
-  color:#8585CC;
+  color:                  #8585CC;
 }
 
 input, textarea {
-  background:           #fff;
-/*  border-color:         #CCC;*/
-  border-color:                                     #DBDBDB;
-  color:                #111;
+  color:                  #111;
+  background:             #FFF;
+  border-color:           #DBDBDB;
 }
 
 input:hover, textarea:hover {
-  background:           #fff;
-/*  border-color:         #000;*/
-  border-color:#111;
+  background:             #FFF;
+  border-color:           #111;
 }
 
 input:active, input:focus, textarea:active, textarea:focus {
-/*  background:           #FFF url(../images/bg_input_on.gif) repeat-x top;*/
-  background:           #FFF url(../images/input_hover.gif) repeat-x top;
-/*  border-color:         #000;*/
-  border-color: #111;
+  background:             #FFF url(../images/input_hover.gif) repeat-x top;
+  border-color:           #111;
 }
 
 .application #main_content h2 {
-  background:           url(../images/error_404.gif) no-repeat center;
+  background:             url(../images/error_404.gif) no-repeat center;
 }
 
 .application#server_error #main_content h2 {
-  background-image:     url(../images/error_500.gif);
+  background-image:       url(../images/error_500.gif);
 }
 
 .application#timeout #main_content h2 {
-  background-image:     url(../images/error_timeout.gif);
+  background-image:       url(../images/error_timeout.gif);
 }
 
 .go_to_checkout {
-  background:           transparent url(../images/shopping_cart.gif) no-repeat right center;
+  background:             transparent url(../images/shopping_cart.gif) no-repeat right center;
 }
 
 .moved_to_cart {
-  opacity:              .3;
+  opacity:                .3;
 }
 
 .pages strong {
-/*  background:           #d9d9d9;*/
-  background:                                     #DBDBDB;
-/*  color:                #000;*/
-  color:#111;
+  color:                  #111;
+  background:             #DBDBDB;
 }
 
 .text table * {
-/*  border-color:         #16161F;*/
-  border-color:#17171F;
+  border-color:           #17171F;
 }
 
 .text td span {
-  color:                #888;
+  color:                  #888;
 }
 
 code, .text th {
-/*  background:           #16161F;*/
-  background: #17171F;
-  color:                #FFF;
-  color:#DBDBDB;
+  color:                  #DBDBDB;
+  background:             #17171F;
 }
 
 #all_pictures label, #cart_items label, #selected_pictures label {
-  color:                #fff;
+  color:                  #FFF;
 }
 
 #all_pictures li label, #all_pictures li a, #cart_items label, #cart_items a, #selected_pictures label, #selected_pictures a {
-  background-color:     #292938;
+  background-color:       #292938;
 }
 
 #back_to_gallery a {
-  color:                #7b7ba4;
+  color:                  #7B7BA4;
 }
 
 #big_picture #next span, #big_video #next span {
-  background:           transparent url(../images/arrow_next.gif) no-repeat center left;
+  background:             transparent url(../images/arrow_next.gif) no-repeat center left;
 }
 
 #big_picture a span, #big_video span {
-  background:           transparent url(../images/arrow_previous.gif) no-repeat center right;
+  background:             transparent url(../images/arrow_previous.gif) no-repeat center right;
 }
 
-#big_picture img {
-/*  color:                #6849c1;*/
-  color:        #F498DA;
-/*  border-color:         #4A4A5F;*/
-  border-color: #44445D;
-}
 
 #big_picture label {
-  background:           #292938;
-  
-/*  color:                #d3d3d3;*/
-/*  border-color:         #4a4a5f;*/
-  border-color:#44445D;
+  background:             #292938;
+  border-color:           #44445D;
 }
 
 #cart_items {
-  background-color:     #292938;
-  border-color:         #5c5c79;
+  background-color:       #292938;
+  border-color:           #5C5C79;
 }
 
 #cart_items.instructions {
-/*  background:           #48485e url(../images/selection_instructions.gif) no-repeat center center;*/
-  background:                                                                             #44445D url(../images/selection_instructions.png) no-repeat center;
-}
-
-#data_sheet dl a, #searched_item, .text dt, .text #main_content strong {
-  color:                #f498da;
+  background:             #44445D url(../images/selection_instructions.png) no-repeat center;
 }
 
 #data_sheet li {
-  color:                #fff;
+  color:                  #FFF;
 }
 
 #facebox * {
-  background:           transparent url(../images/facebox_bg.gif) top left;
+  background:             transparent url(../images/facebox_bg.gif) top left;
 }
 
 #facebox a {
-  background-position:  top right;
-/*  color:                #000;*/
-  color:#111;
+  color:                  #111;
+  background-position:    top right;
 }
 
 #facebox img {
-  background-position:  bottom right;
+  background-position:    bottom right;
 }
 
 #facebox p {
-  background-position:  bottom left;
+  background-position:    bottom left;
 }
 
 #footer {
-	background:           #292938 url(../images/footer.gif) repeat-x scroll center;
-	border-color:         #3B3B48;
+	background:             #292938 url(../images/footer.gif) repeat-x scroll center;
+	border-color:           #3B3B48;
 }
 
 #footer a {
-/*  color:                #7575a8;*/
-  color:#7B7BA4;
-/*  color:red;*/
+  color:                  #7B7BA4;
 }
 
 #footer p, #footer h6, #footer strong {
-  color:                #a5a5cb;
+  color:                  #A5A5CB;
 }
 
 #global_search {
-  background:           transparent url(../images/search_corner_left.gif) no-repeat left center;
+  background:             transparent url(../images/search_corner_left.gif) no-repeat left center;
 }
 
 #global_search #query {
-  background:           #181831;
-  border-color:         #181831;
-  color:                #A5A5CB;
+  color:                  #A5A5CB;
+  background:             #181831;
+  border-color:           #181831;
 }
 
 #global_search fieldset {
-  background:           transparent url(../images/search_corner_right.gif) no-repeat right center;
+  background:             transparent url(../images/search_corner_right.gif) no-repeat right center;
 }
 
 #go_back_to_thumbnails {
-  background:           transparent url(../images/arrow_left.gif) no-repeat left center;
+  background:             transparent url(../images/arrow_left.gif) no-repeat left center;
 }
 
 #go_to_gallery {
-  background:           transparent url(../images/gallery_album.gif) no-repeat left center;
+  background:             transparent url(../images/gallery_album.gif) no-repeat left center;
 }
 
 #header {
-  background:           url(../images/header_shading.png) top;
-  border-bottom-color:  #3b3b48;
+  background:             url(../images/header_shading.png) top;
+  border-bottom-color:    #3B3B48;
 }
 
 #header h2#slogan {
-/*  color:                #ABABC3;*/
-  color:      #A5A5CB;
-}
-
-#header li a {
-/*  color:                #6d6da2;*/
-/*  color:                                                      #7B7BA4;*/
+  color:                  #A5A5CB;
 }
 
 #main_content {
-  background:           #292938;
-  border-left-color:    #3b3b48;
-  border-right-color:   #3b3b48;
+  background:             #292938;
+  border-right-color:     #3B3B48;
+  border-left-color:      #3B3B48;
 }
 
 #main_content h1 {
-  border-bottom-color:  #3b3b48;
+  border-bottom-color:    #3B3B48;
 }
 
 #see_data_sheet {
-  background:           transparent url(../images/arrow_down.gif) no-repeat left center;
+  background:             transparent url(../images/arrow_down.gif) no-repeat left center;
 }
 
 #go_to_selection a {
-  background:           url(../images/select_pictures.gif) no-repeat top left;
+  background:             url(../images/select_pictures.gif) no-repeat top left;
 }
 
 #submit_error {
-  background-color:     #f88181;
-/*  border-color:         #a31212;*/
-  border-color:    #770000;
-  color:                #770000;
+  color:                  #770000;
+  background-color:       #F88181;
+  border-color:           #770000;
 }
 
 #submit_success {
-  background-color:     #faefb3;
-/*  border-color:         #ffcc66;*/
-  border-color:     #CC6600;
-  color:                #cc6600;
+  color:                  #CC6600;
+  background-color:       #FAEFB3;
+  border-color:           #CC6600;
 }
 
 #subnavigation a, #see_data_sheet a {
-  color:                #7b7ba4;
+  color:                  #7B7BA4;
 }
 
 #summary, #about_us, #data_sheet, .application #main_content ul, .pages {
-  background:           #17171f;
-/*  border-color:         #000;*/
-  border-color:#111;
+  background:             #17171F;
+  border-color:           #111;
 }
 
 #picture_description p {
-/*  color:                #000;*/
-  color:#111;
+  color:                  #111;
 }
 
 #tags h3 {
-/*  color:                #d3d3d3;*/
-  color:                                                                    #DBDBDB;
+  color:                  #DBDBDB;
 }
 
 body#selection #selection_size {
-  color:                #292938;
+  color:                  #292938;
 }
 
 body#selection #selection_size label {
-  background:           url(../images/tab_selection_size.gif) no-repeat left center;
+  background:             url(../images/tab_selection_size.gif) no-repeat left center;
 }
 
 pre, #toc {
-/*  background:           #16161F;*/
-  background: #17171F;
-  border-color:         #3B3B48;
+  background:             #17171F;
+  border-color:           #3B3B48;
 }
 
 #thumbnails label {
-/*  background:           #383849;*/
-  background:#3B3B48;
-/*  color:                #d9d9d9;*/
+  background:             #3B3B48;
 }
 
 #thumbnails li div a {
-  background:           url(../images/thumbnail_box.gif);
+  background:             url(../images/thumbnail_box.gif);
 }
 
 #all_pictures a:hover, #cart_items a:hover, #selected_pictures a:hover {
-  background:           #5c5c79 url(../images/magnifying_glass.gif) no-repeat top;
+  background:             #5C5C79 url(../images/magnifying_glass.gif) no-repeat top;
 }
 
 #back_to_gallery a:hover {
-  color:                #8585cc;
+  color:                  #8585CC;
 }
 
 #big_picture a#next:active span, #big_video a#next:active span {
-  background-image:     url(../images/arrow_next_active.gif);
+  background-image:       url(../images/arrow_next_active.gif);
 }
 
 #big_picture a#next:hover span, #big_video a#next:hover span {
-  background-image:     url(../images/arrow_next_hover.gif);
+  background-image:       url(../images/arrow_next_hover.gif);
 }
 
 #big_picture a#previous:active span, #big_video a#previous:active span {
-  background-image:     url(../images/arrow_previous_active.gif);
+  background-image:       url(../images/arrow_previous_active.gif);
 }
 
 #big_picture a#previous:hover span, #big_video a#previous:hover span {
-  background-image:     url(../images/arrow_previous_hover.gif);
+  background-image:       url(../images/arrow_previous_hover.gif);
 }
 
 #big_video label span, #selected_pictures a.remove_picture:hover, #facebox {
-  background:           none;
+  background:             none;
 }
 
 #footer a:hover {
-/*  color:                #9898d2;*/
-  color:#8585CC;
+  color:                  #8585CC;
 }
 
 #go_back_to_thumbnails:hover{
-  background:           transparent url(../images/arrow_left_hover.gif) no-repeat left center;
+  background:             transparent url(../images/arrow_left_hover.gif) no-repeat left center;
 }
 
-#header li a:visited {
-/*  color:                #6d6da2;*/
-/*  color:                                          #7B7BA4;*/
-}
-
-#header li a:hover {
-  color:                #a7a7f9;
-}
-
-#header li.current a {
-	color:                #F498DA;
+#header li a:hover, #header li a:focus {
+  color:                  #A7A7F9;
 }
 
 #header h1#logo_screen a, h1#logo_screen a:visited, #header h1 img, .pages a:hover, .pages a.previous:hover, .pages a.next:hover {
-  color:                #FFF;
+  color:                  #FFF;
 }
 
 #see_data_sheet:hover {
-  background:           transparent url(../images/arrow_down_hover.gif) no-repeat left center;
+  background:             transparent url(../images/arrow_down_hover.gif) no-repeat left center;
 }
 
 #subnavigation a:hover, #see_data_sheet a:hover {
-  color:                #8585cc;
+  color:                  #8585CC;
 }
 
 #summary a, a:visited {
-  color:                #7b7ba4;
+  color:                  #7B7BA4;
 }
 
 #summary a:hover {
-  color:                #8585cc;
+  color:                  #8585CC;
 }
 
 #tags a, #tags a:visited {
-/*  color:                #7c7c9e;*/
-  color:                                                      #7B7BA4;
+  color:                  #7B7BA4;
 }
 
 #tags a:hover {
-  background-color:     #44445d;
-  color:                #FFF;
+  color:                  #FFF;
+  background-color:       #44445D;
 }
 
 .email_field_with_errors, .email_field_with_errors:hover, .email_field_with_errors:focus {
-  background:           #f88181;
-/*  border-color:         #af464a;*/
-  border-color:#770000;
-  color:                #fff;
+  color:                  #FFF;
+  background:             #F88181;
+  border-color:           #770000;
 }
 
 .application #main_content ul li a, .application #main_content ul li a:visited, #valid_search_suggestions a, #go_to_selection a:link, #go_to_selection a:visited, .go_to_checkout a {
-  color:                #7b7ba4;
+  color:                  #7B7BA4;
 }
 
 #go_to_selection a:hover {
-  background:           url(../images/select_pictures_hover.gif) no-repeat top left;
-  color:                #8585cc;
+  color:                  #8585CC;
+  background:             url(../images/select_pictures_hover.gif) no-repeat top left;
 }
 
 .application #main_content ul li a:hover, #valid_search_suggestions a:hover, .go_to_checkout a:hover {
-  color:                #8585cc;
+  color:                  #8585CC;
 }
 
 .pages a, .pages a:visited, .pages a.previous:visited, .pages a.next:visited, .pages a.previous, .pages a.next {
-/*  background-color:     #333344;*/
-  background-color:#3B3B48;
-/*  color:                #cacaca;*/
-  color:#DBDBDB;
+  color:                  #DBDBDB;
+  background-color:       #3B3B48;
 }
 
 .pages a.next:hover, .pages a:hover {
-/*  background-color:     #4a4a63;*/
-  background-color:#5C5C79;
-/*  color:                #cacaca;*/
-  color:#DBDBDB;
+  color:                  #DBDBDB;
+  background-color:       #5C5C79;
 }
 
 .pages a.previous:hover {
-/*  background-color:     #333344;*/
-/*  color:                #cacaca;*/
-  color:#DBDBDB;
-}
-
-.submitting, .submitting:hover {
-  background:           #33335a url(../images/spinner_form.gif) no-repeat 95% center;
-  border-color:         #424273;
-  color:                #f498da;
-}
-
-#header li a:active {
-/*  color:                #d587ef;*/
-  color:      #EF72CC;
+  color:                  #DBDBDB;
 }
 
 #thumbnails a:hover img {
-  color:                #FFF;
+  color:                  #FFF;
 }
 
 #thumbnails a:hover label {
-  color:                #fff;
+  color:                  #FFF;
 }
 
 #thumbnails li div a:visited {
-  background:           url(../images/thumbnail_box_visited.gif);
+  background:             url(../images/thumbnail_box_visited.gif);
 }
 
-#thumbnails li div a:hover {
-  background:           url(../images/thumbnail_box_hover.gif);
+#thumbnails li div a:hover, #thumbnails li div a:focus {
+  background:             url(../images/thumbnail_box_hover.gif);
 }
+
+.submitting, .submitting:hover {
+  background:             #33335A url(../images/spinner_form.gif) no-repeat 95% center;
+  border-color:           #424273;
+}
+
+#big_picture img {
+  border-color:           #44445D;
+}
+
+
+
+/* Exclusivo */
+#header li.current a {
+	color:                  #F498DA;
+}
+
+#header li a:active {
+  color:                  #EF72CC;
+}
+
+#data_sheet dl a, #searched_item, .text dt, .text #main_content strong {
+  color:                  #F498DA;
+}
+
+h3 a, h3 a:visited {
+  color:                  #EF72CC;
+}
+a:focus, h3 a:hover, h3 a:focus, #data_sheet dl a:hover {
+  color:                  #F498DA;
+}
+
+.submitting, .submitting:hover {
+  color:                  #F498DA;
+}
+
+#big_picture img {
+  color:                  #F498DA;
+}
+
+.text #main_content h2, 
+.application #main_content h2 {
+  color:                  #EF72CC;
+}
+
+
+/*
+#EF72CC (rosa escuro)
+#F498DA (rosa luminoso)
+*/
